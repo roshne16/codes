@@ -74,6 +74,10 @@ WHERE winner IN ('Theodore Roosevelt',
 'Jimmy Carter',
 'Barack Obama')
 
-SELECT winner
+7.SELECT winner
 FROM nobel
 WHERE winner LIKE 'John%'
+
+9.SELECT yr,subject,winner
+FROM nobel
+WHERE yr=1980 AND subject != 'Chemistry' AND subject!='Medicine'
