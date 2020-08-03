@@ -58,3 +58,22 @@ WHERE yr = 1950
 3.SELECT yr,subject
 FROM nobel
 WHERE winner='albert einstein'
+
+4.SELECT winner
+FROM nobel
+WHERE subject='Peace' AND yr>=2000
+
+5.SELECT yr,subject,winner
+FROM nobel
+WHERE subject='Literature' AND yr BETWEEN 1980 AND 1989
+
+6.SELECT yr,subject,winner
+FROM nobel 
+WHERE winner IN ('Theodore Roosevelt',
+'Woodrow Wilson',
+'Jimmy Carter',
+'Barack Obama')
+
+SELECT winner
+FROM nobel
+WHERE winner LIKE 'John%'
