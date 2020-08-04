@@ -81,3 +81,13 @@ WHERE winner LIKE 'John%'
 9.SELECT yr,subject,winner
 FROM nobel
 WHERE yr=1980 AND subject != 'Chemistry' AND subject!='Medicine'
+
+SELECT yr,subject,winner
+FROM nobel
+WHERE NOT subject IN ('Chemistry','Medicine') AND yr=1980 
+
+10.SELECT yr,subject,winner
+FROM nobel
+WHERE (yr<1910  AND subject='Medicine' ) 
+               OR
+       (yr>=2004 AND  subject='Literature')
