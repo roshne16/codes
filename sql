@@ -91,3 +91,11 @@ FROM nobel
 WHERE (yr<1910  AND subject='Medicine' ) 
                OR
        (yr>=2004 AND  subject='Literature')
+       
+11.SELECT yr,subject,winner
+FROM nobel
+WHERE winner LIKE 'Peter Gr%'
+
+12.SELECT yr,subject,winner
+FROM nobel
+WHERE winner LIKE 'Eugene O%'
